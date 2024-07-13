@@ -1,0 +1,61 @@
+:root {
+	--preto-dnc: rgb(48, 48, 48);
+	--branco-dnc: rgb(239, 235, 228);
+	--azul-dnc: rgb(12, 112, 242);
+	--font-padrao: 'verdana';
+}
+
+body {
+	background-color: var(--preto-dnc);
+	color: var(--branco-dnc);
+	text-align: center;
+	font-family: var(--font-padrao);
+}
+
+header {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 33vw;
+}
+
+#logo {
+	width: 100px;
+	margin: 10px 20px 10px 20px;
+}
+
+section {
+	background-color: var(--branco-dnc);
+	color: var(--preto-dnc);
+	padding: 10px;
+	border-radius: 10px;
+	width: 20%;
+	margin: auto;
+}
+
+#botao {
+	background-color: var(--azul-dnc);
+	color: var(--branco-dnc);
+	border: 0;
+	width: 120px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 15px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#botao:hover {
+	background-color: green;
+	transform: translateY(-4px);
+	transition-duration: 0.1s;
+	box-shadow: 6px 6px 15px #000000;
+}
+
+.form {
+	margin: 7px;
+	padding-left: 10px;
+	border-radius: 10px;
+	border-style: none;
+	height: 25px;
+	width: 200px;
+}
